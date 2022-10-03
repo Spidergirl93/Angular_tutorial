@@ -7,9 +7,8 @@ import { HeaderComponent } from './header/header.component';
 import { RecipeListComponent } from './recipes/recipe-list/recipe-list.component';
 import { RecipeDetailComponent } from './recipes/recipe-detail/recipe-detail.component';
 import { RecipeItemComponent } from './recipes/recipe-item/recipe-item.component';
-import { IngredientsComponent } from './ingredients/ingredients.component';
-import { ShoppingListComponent } from './ingredients/shopping-list/shopping-list.component';
-import { ShoppingListEditComponent } from './ingredients/shopping-list-edit/shopping-list-edit.component';
+import { ShoppingListComponent } from './shopping-list/shopping-list.component';
+import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
 
 @NgModule({
   declarations: [
@@ -19,14 +18,11 @@ import { ShoppingListEditComponent } from './ingredients/shopping-list-edit/shop
     RecipeListComponent,
     RecipeDetailComponent,
     RecipeItemComponent,
-    IngredientsComponent,
     ShoppingListComponent,
     ShoppingListEditComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
